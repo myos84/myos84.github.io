@@ -1,0 +1,217 @@
+/* ------------------- GOOGLE FONT --------------- */
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@300;500;700&display=swap');
+/* font-family: 'Mukta', sans-serif; */
+
+
+body {
+    margin: 0;
+    font-family: 'Mukta', sans-serif;
+    box-sizing: border-box;
+    color: black;
+}
+
+header {
+    height: 100vh;
+    background: rgb(205,242,202);
+background: linear-gradient(0deg, rgba(205,242,202,1) 0%, rgba(153,254,255,1) 73%);
+}
+header nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    align-items: center;
+}
+
+ul{
+    list-style-type: none;
+    display: flex;
+}
+ul li a{
+    text-decoration: none;
+    color: black;
+    margin-left: 10px;
+    font-weight: 300;
+    transition: all .5s ;
+}
+ul li a:hover {
+    font-weight: 700;
+}
+
+h2,p{
+    margin: 0;
+}
+
+form input {
+    border: none;
+    background-color: #0071ce70;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+form label{
+    margin-top: 10px;
+    font-weight: 30
+    
+}
+
+form textarea{
+    border: none;
+    background-color: #0071ce4d;
+    padding: 10px;
+    border-radius: 10px;
+    resize: none;
+}
+
+#presentation {
+    display: flex;
+    height: calc( 100vh - 79px);
+    align-items: center;
+}
+
+#contact a{
+    display: inline-block;
+    text-decoration: none;
+    color: #0073ce;
+    border: 1px solid #0073ce;
+    padding: 7px;
+    margin-top: 10px;
+    border-radius: 10px;
+    transition: all .3s ease-in-out;
+}
+#contact a:hover{
+    color: white;
+    border: 1px solid white;
+    background-color: #0073ce;
+    margin-top: 10px;
+}
+
+#creations {
+    margin-top: 30px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+#flexFoot {
+    padding-top: 15px;
+    border-top:1px solid black;
+    text-align: center;
+}
+#flexFoot span {
+    font-weight: 700;
+}
+
+#formulaire {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.container {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.logo {
+    font-weight: 700;
+    font-size: 1.5em;
+}
+
+.leftPresentation {
+    width: 80%;
+}
+.leftPresentation p {
+    margin: 0;
+}
+.leftPresentation .title {
+    font-weight: 700;
+    font-size: 3em;
+}
+
+.rightPresentation {
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+}
+.rightPresentation img{
+    width: 80%;     
+}
+
+.grid{
+    margin: 50px 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: minmax(70px, auto);
+    gap: 20px;
+}
+.grid a{
+    text-align: left;
+    transition: all .4s;
+    text-decoration: none;
+    font-size: 1.2em;
+    text-shadow: 0 0 15px black;
+}
+.grid a:hover{
+    opacity: 0.7;
+    transition: all .4s;
+}
+
+
+.projet{
+    background-color: black;
+    padding: 30px 25px;
+    border-radius: 10px;
+    color: white;
+}
+
+.projet1{
+    background: center url(../images/projet_tarte_choco.png);
+    background-size: cover;
+}
+
+.projet2{
+    background: center url(../images/mega-pop.jpg);
+    background-size: cover;
+}
+
+.projet3{
+    background: center url(../images/pac-man.jpg);
+    background-size: cover;
+}
+
+.projet4{
+    background: center url(../images/rodeo-pump.jpg);
+    background-size: cover;
+}
+
+.formFlex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 200px);
+}
+
+.card {
+    padding: 100px;
+    background-color: rgba(255, 255, 255, 0.542);
+    border-radius: 30px;
+}
+
+.envoyer {
+    color: white;
+    border: 1px solid white;
+    background-color: #0073ce;
+    margin-top: 20px;
+    padding: 10px 15px;
+    border-radius: 15px;
+    font-weight: 700;
+    cursor: pointer;
+}
+.envoyer:hover{
+    background-color: white;
+    color: #0073ce;
+}
+
+.headContact {
+    height:calc(100vh - 60px);
+}
+

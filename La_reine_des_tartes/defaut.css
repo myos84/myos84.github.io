@@ -1,0 +1,70 @@
+/* Polices personnalisées */
+
+@font-face {
+    font-family: "beauty mermaid";
+    src: url('sources/polices/beauty_mermaid.ttf');
+}
+
+@font-face {
+    font-family: "beauty mermaid";
+    src: url('sources/polices/beauty_mermaid_italic.ttf');
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "beauty mermaid";
+    src: url('sources/polices/beauty_mermaid_bold.ttf');
+    font-style: bold;
+}
+
+/********************/
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: #f1f1e8;
+    margin: 0;
+}
+
+footer {
+    font-weight: bold;
+    font-style: italic;
+    border-top: 1px solid black;
+    padding-top: 15px;
+}
+
+#logo {
+    font-size: 45px;
+    font-family: 'beauty mermaid', cursive;
+    text-align: center;
+    color: #f2a07b;
+    /* box-shadow: 0 0 40px 10px black; */
+    text-shadow: -1px 1px 4px rgba(0,0,0,0.42);
+}
+
+#presentation {
+    width: 50%;
+}
+
+#lipsum {
+    width: 50%;
+    text-align: justify;
+    border: 5px solid pink;
+    border-radius: 14px 40px 10px 14px;
+    padding: 10px;
+}
+
+p {
+    display: inline-block;
+}
+
+section {
+    margin: 30px;
+}
+
+.container {
+    margin: 0 auto;
+    width: 1000px;
+}

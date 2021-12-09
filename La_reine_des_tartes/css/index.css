@@ -1,0 +1,155 @@
+/* --------- Font --------- */
+@import url('https://fonts.googleapis.com/css2?family=Neuton:wght@200;400;800&display=swap');
+/*     font-family: 'Neuton', serif; */
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Neuton', serif;
+    list-style-type: none;
+}
+
+body {
+    background-color: #D3E4CD;
+}
+
+/* --------- HEADER ---------------- */
+
+header { 
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+header h1 {
+    font-weight: 800;
+    font-size: 3rem;
+    letter-spacing: 2px;
+    color: #664a37;
+    padding-bottom: 1rem;
+}
+
+header h1 {
+    background: linear-gradient(to left, #cca17b, #4e301f);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+/* ------------ NAVIGATION ---------------- */
+
+
+header nav a {
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 1.6rem;
+    color: #8f7660;
+}
+
+header .navBar {
+    display: flex;
+    width: 750px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* ---------- EFFET LINK NAV --------------- */
+
+header .link {
+    position: relative;
+    transition: 0.5s;
+}
+
+header .link::before{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: black;
+    bottom: -5px;
+}
+
+header .link:hover::before{
+    animation : slideNav .7s forwards;
+}
+
+@keyframes slideNav {
+    
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 100%;
+    }
+}
+
+header .link:hover{
+    color:#4e301f;
+}
+
+/* ---------------- SECTION------------------ */
+
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+section .card {
+        border: 1px solid #664a37 ;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 1rem;
+        border-radius: 30px;
+        -webkit-box-shadow: 5px 6px 9px -3px rgba(0,0,0,0.59); 
+        box-shadow: 5px 6px 9px -3px rgba(0,0,0,0.59);
+        background-color: rgba(255, 255, 255, 0.638);
+}
+
+section .card h2{
+    background: linear-gradient(to left, #cca17b, #4e301f);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+    padding-bottom: 2rem;
+    text-decoration: underline #cca17b;
+}
+
+#presentation ~ a {
+    font-style: italic;
+}
+
+#presentation b {
+    font-weight: normal;
+}
+
+a, footer, p {
+    font-style: italic;
+}
+
+.lipsum {
+    text-align: justify;
+    color: #924518;
+}
+
+
+/* ---------------- FOOTER ------------------ */
+
+footer {
+    height: 150px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding-top: 1rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    background: url(../images/cookies-gc492cb461_1920.jpg) no-repeat center;
+    background-size: cover;
+    color: white;
+}
