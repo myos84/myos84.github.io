@@ -43,23 +43,21 @@ h2,p{
 
 form input {
     border: none;
-    background-color: #0071ce70;
+    background-color: rgba(255, 255, 255, 0.618);
     padding: 10px;
     border-radius: 10px;
 }
 
-form label{
-    margin-top: 10px;
-    font-weight: 30
-    
-}
 
 form textarea{
     border: none;
-    background-color: #0071ce4d;
+    background-color: rgba(255, 255, 255, 0.618);
     padding: 10px;
     border-radius: 10px;
     resize: none;
+    font-size: 1.3em;
+    font-weight: 700;
+    color: #0073ce;
 }
 
 #presentation {
@@ -103,6 +101,17 @@ form textarea{
 #formulaire {
     display: flex;
     flex-direction: column;
+}
+
+#topForm {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+#inputForm {
+    margin: 15px;
+    color: #0073ce;
+    font-weight: 700;
 }
 
 
@@ -191,27 +200,55 @@ form textarea{
 }
 
 .card {
-    padding: 100px;
-    background-color: rgba(255, 255, 255, 0.542);
+    padding: 50px;
+    background-color: #0071ce20;
     border-radius: 30px;
+    width: 50%;
+}
+.card span{
+    font-weight: bolder;
+    letter-spacing: 6px;
+    font-size: 2em;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    color: #0071ce7c;
+    text-decoration: underline #FFF 2px;
+}
+.card span .far{
+    color: #0073ce;
+    text-shadow: 0 0 15px #0071ce0b;
 }
 
 .envoyer {
     color: white;
-    border: 1px solid white;
+    /* border: 1px solid white; */
     background-color: #0073ce;
     margin-top: 20px;
     padding: 10px 15px;
     border-radius: 15px;
     font-weight: 700;
+    font-size: 1.2em;
     cursor: pointer;
+    transition: all .3s;
 }
 .envoyer:hover{
     background-color: white;
     color: #0073ce;
+    transition: all .3s;
 }
 
 .headContact {
     height:calc(100vh - 60px);
 }
+
+.picture {
+    background: center url(../images/presentation.png.png) ;
+    height: 50%;
+    width: 50%;
+    background-size: cover;
+    margin-right: 50px;
+
+}
+
 
