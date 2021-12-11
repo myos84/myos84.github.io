@@ -287,7 +287,6 @@ form textarea{
         header nav {
             display: flex;
             flex-direction: column;
-            padding: 10px;
             align-items: center;
         }
         
@@ -310,6 +309,7 @@ form textarea{
         header nav ul {
             width: 100%;
             padding: 0;
+            justify-content: center;
         }
     
     }
