@@ -200,7 +200,7 @@ form textarea{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: calc(100vh - 200px);
+    height: 100%;
 }
 
 .card {
@@ -208,6 +208,7 @@ form textarea{
     background-color: #0071ce20;
     border-radius: 30px;
     width: 70%;
+    margin-bottom: 20px;
 }
 .card span{
     font-weight: bolder;
@@ -243,7 +244,7 @@ form textarea{
 }
 
 .headContact {
-    height:calc(100vh - 60px);
+    height:100%;
 }
 
 @media screen and (max-width: 1050px) {
@@ -298,6 +299,49 @@ form textarea{
             height: 100%;
             padding: 20px;
         }
+    }
+
+    @media screen and (max-width: 680px) {
+        .card {
+            padding: 50px;
+            background-color: #0071ce20;
+            border-radius: 30px;
+            margin-bottom: 20px;
+        }
+        .card span{
+            font-weight: bolder;
+            letter-spacing: 6px;
+            font-size: 2em;
+            display: inline-block;
+            width: 100%;
+            text-align: center;
+            color: #0071ce7c;
+            text-decoration: underline #FFF 2px;
+        }
+        .card span .far{
+            color: #0073ce;
+            text-shadow: 0 0 15px #0071ce0b;
+        }
+
+        #formulaire {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        #topForm {
+            display: flex;
+            flex-wrap: wrap;
+            width: 100%;
+            justify-content: center;
+        }
+        
+        #inputForm {
+            margin: 15px;
+            color: #0073ce;
+            font-weight: 700;
+            width: 100%;
+        }
+        
     }
 
     @media screen and (max-width : 500px) {
