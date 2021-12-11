@@ -32,9 +32,13 @@ ul li a{
     margin-left: 10px;
     font-weight: 300;
     transition: all .5s ;
+    background-color: rgba(255, 255, 255, 0.699);
+    padding: 3px 10px;
+    border-radius: 30px;
 }
 ul li a:hover {
-    font-weight: 700;
+    background-color: #0073ce;
+    color: #FFF;
 }
 
 h2,p{
@@ -203,7 +207,7 @@ form textarea{
     padding: 50px;
     background-color: #0071ce20;
     border-radius: 30px;
-    width: 50%;
+    width: 70%;
 }
 .card span{
     font-weight: bolder;
@@ -242,13 +246,70 @@ form textarea{
     height:calc(100vh - 60px);
 }
 
-.picture {
-    background: center url(../images/presentation.png.png) ;
-    height: 50%;
-    width: 50%;
-    background-size: cover;
-    margin-right: 50px;
+@media screen and (max-width: 1050px) {
+  .container {
+      width: 800px;
+  }
+  }
 
-}
+  @media screen and (max-width: 850px) {
+    .container {
+        width: 600px;
+    }
 
+    .leftPresentation .title {
+        font-weight: 700;
+        font-size: 2em;
+    }
 
+    .grid{
+        margin: 50px 0;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: minmax(70px, auto);
+        gap: 20px;
+        width: 80%;
+        margin: 20px auto;
+        
+    }
+    
+    }
+
+    @media screen and (max-width: 850px) {
+        .rightPresentation {
+            display: none;
+        }
+
+        .container {
+            width: 90%;
+        }
+
+        header nav {
+            display: flex;
+            flex-direction: column;
+            padding: 10px;
+            align-items: center;
+        }
+        
+        header {
+            height: 100%;
+        }
+
+        #presentation {
+            height: 100%;
+            padding: 20px;
+        }
+    }
+
+    @media screen and (max-width : 500px) {
+        .leftPresentation .title {
+            font-weight: 700;
+            font-size: 1em;
+        }
+
+        header nav ul {
+            width: 100%;
+            padding: 0;
+        }
+    
+    }
