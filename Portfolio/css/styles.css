@@ -1,6 +1,8 @@
 /* ------------------- GOOGLE FONT --------------- */
 @import url('https://fonts.googleapis.com/css2?family=Mukta:wght@300;500;700&display=swap');
 /* font-family: 'Mukta', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Pushster&display=swap');
+/*     font-family: 'Pushster', cursive; */
 
 
 body {
@@ -28,17 +30,18 @@ ul{
 }
 ul li a{
     text-decoration: none;
-    color: black;
+    color: #FFF;
     margin-left: 10px;
-    font-weight: 300;
+    font-weight: 500;
     transition: all .5s ;
-    background-color: rgba(255, 255, 255, 0.699);
-    padding: 3px 10px;
+    background-color: #0073ce;
+    padding: 3px 15px;
     border-radius: 30px;
 }
 ul li a:hover {
-    background-color: #0073ce;
-    color: #FFF;
+    background-color: #FFF;
+    color: #0073ce;
+    font-weight: 500;
 }
 
 h2,p{
@@ -46,22 +49,24 @@ h2,p{
 }
 
 form input {
-    border: none;
-    background-color: rgba(255, 255, 255, 0.618);
+    border: none ;
+    border-bottom: 1px solid black;
+    background-color: transparent;
     padding: 10px;
-    border-radius: 10px;
+    outline: none;
 }
 
 
 form textarea{
+    margin-top: 30px;
     border: none;
-    background-color: rgba(255, 255, 255, 0.618);
+    background-color: #0071ce4f;
     padding: 10px;
     border-radius: 10px;
     resize: none;
-    font-size: 1.3em;
-    font-weight: 700;
-    color: #0073ce;
+    font-weight: 900;
+    color: black;
+    outline: none;
 }
 
 #presentation {
@@ -97,6 +102,8 @@ form textarea{
     padding-top: 15px;
     border-top:1px solid black;
     text-align: center;
+    background-color: #0073ce;
+    height: 200px;
 }
 #flexFoot span {
     font-weight: 700;
@@ -108,25 +115,38 @@ form textarea{
 }
 
 #topForm {
+    gap: 10px;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2,1fr);
 }
 
 #inputForm {
-    margin: 15px;
-    color: #0073ce;
-    font-weight: 700;
+    margin-bottom: 10px;
+    color: black;
 }
 
 
 .container {
     width: 1000px;
+    height: auto;
     margin: 0 auto;
 }
 
 .logo {
-    font-weight: 700;
-    font-size: 1.5em;
+    font-weight: 500;
+    color :#0073ce;
+    font-size: 3rem;
+    font-family: 'Pushster', cursive;
+    position: relative;
+}
+
+.logo::after{
+    content : "";
+    position : absolute;
+    width: 4px;
+    margin-left: 10px;
+    height: 50px;
+    background-color: #FFF;
 }
 
 .leftPresentation {
@@ -149,13 +169,6 @@ form textarea{
     width: 80%;     
 }
 
-.grid{
-    margin: 50px 0;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: minmax(70px, auto);
-    gap: 20px;
-}
 .grid a{
     text-align: left;
     transition: all .4s;
@@ -200,16 +213,30 @@ form textarea{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100%;
+    height: calc(100vh - 150px);
 }
 
 .card {
     padding: 50px;
-    background-color: #0071ce20;
-    border-radius: 30px;
+    background-color: #ffffff9f;
+    border-radius: 0 40px 0 40px;
     width: 70%;
     margin-bottom: 20px;
+    position: relative;
 }
+
+.card::before {
+    font-family: "FontAwesome";
+    content : "\f46d";
+    font-size: 5rem;
+    color: #0073ce;
+    position: absolute;
+    top: 0;
+    right: 50%;
+    transform: translate(50%, -50%);
+}
+
+
 .card span{
     font-weight: bolder;
     letter-spacing: 6px;
@@ -217,17 +244,13 @@ form textarea{
     display: inline-block;
     width: 100%;
     text-align: center;
-    color: #0071ce7c;
-    text-decoration: underline #FFF 2px;
+    color:#0073ce;
 }
-.card span .far{
-    color: #0073ce;
-    text-shadow: 0 0 15px #0071ce0b;
-}
+
 
 .envoyer {
     color: white;
-    /* border: 1px solid white; */
+    border:none;
     background-color: #0073ce;
     margin-top: 20px;
     padding: 10px 15px;
@@ -244,7 +267,7 @@ form textarea{
 }
 
 .headContact {
-    height:100%;
+    height:calc(100vh - 70px)
 }
 
 @media screen and (max-width: 1050px) {
@@ -304,9 +327,11 @@ form textarea{
     @media screen and (max-width: 680px) {
         .card {
             padding: 50px;
-            background-color: #0071ce20;
-            border-radius: 30px;
+            background-color: #ffffff9f;
+            border-radius: 0 40px 0 40px;
+            width: 70%;
             margin-bottom: 20px;
+            position: relative;
         }
         .card span{
             font-weight: bolder;
@@ -315,13 +340,9 @@ form textarea{
             display: inline-block;
             width: 100%;
             text-align: center;
-            color: #0071ce7c;
-            text-decoration: underline #FFF 2px;
+            color:#0073ce;
         }
-        .card span .far{
-            color: #0073ce;
-            text-shadow: 0 0 15px #0071ce0b;
-        }
+
 
         #formulaire {
             display: flex;
@@ -337,8 +358,7 @@ form textarea{
         
         #inputForm {
             margin: 15px;
-            color: #0073ce;
-            font-weight: 700;
+            color: black;
             width: 100%;
         }
         
