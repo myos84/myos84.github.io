@@ -169,6 +169,13 @@ form textarea{
     width: 80%;     
 }
 
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 40px 0;
+}
+
 .grid a{
     text-align: left;
     transition: all .4s;
