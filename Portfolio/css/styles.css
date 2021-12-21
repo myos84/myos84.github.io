@@ -224,6 +224,7 @@ form textarea{
 }
 
 .card {
+    z-index: 20;
     padding: 50px;
     background-color: #ffffff9f;
     border-radius: 0 40px 0 40px;
