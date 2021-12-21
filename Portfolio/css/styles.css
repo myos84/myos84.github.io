@@ -22,6 +22,7 @@ header nav {
     justify-content: space-between;
     padding: 10px;
     align-items: center;
+    margin-bottom: 50px;
 }
 
 ul{
@@ -103,7 +104,6 @@ form textarea{
     border-top:1px solid black;
     text-align: center;
     background-color: #0073ce;
-    height: 200px;
 }
 #flexFoot span {
     font-weight: 700;
@@ -264,10 +264,6 @@ form textarea{
     background-color: white;
     color: #0073ce;
     transition: all .3s;
-}
-
-.headContact {
-    height:calc(100vh - 70px)
 }
 
 @media screen and (max-width: 1050px) {
