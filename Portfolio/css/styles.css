@@ -28,6 +28,7 @@ header nav {
 ul{
     list-style-type: none;
     display: flex;
+    padding: 0;
 }
 ul li a{
     text-decoration: none;
@@ -35,9 +36,10 @@ ul li a{
     margin-left: 10px;
     font-weight: 500;
     transition: all .5s ;
-    background-color: #0073ce;
+    background: #0073ce;
     padding: 3px 15px;
     border-radius: 30px;
+    
 }
 ul li a:hover {
     background-color: #FFF;
@@ -229,6 +231,9 @@ form textarea{
     width: 70%;
     margin-bottom: 20px;
     position: relative;
+    margin-top: 150px;
+    -webkit-box-shadow: 10px 10px 14px 0px rgba(0,0,0,0.44); 
+box-shadow: 10px 10px 14px 0px rgba(0,0,0,0.44);
 }
 
 .card::before {
@@ -240,6 +245,7 @@ form textarea{
     top: 0;
     right: 50%;
     transform: translate(50%, -50%);
+    
 }
 
 
@@ -276,6 +282,10 @@ form textarea{
   .container {
       width: 800px;
   }
+
+  .card {
+      margin-top: 120px;
+  }
   }
 
   @media screen and (max-width: 850px) {
@@ -298,6 +308,10 @@ form textarea{
         margin: 20px auto;
         
     }
+
+    .card {
+        margin-top: 80px;
+    }
     
     }
 
@@ -316,15 +330,13 @@ form textarea{
             align-items: center;
         }
         
-        header {
-            height: 100%;
-        }
-
         #presentation {
             height: 100%;
             padding: 20px;
         }
     }
+
+    
 
     @media screen and (max-width: 680px) {
         .card {
@@ -362,6 +374,10 @@ form textarea{
             margin: 15px;
             color: black;
             width: 100%;
+        }
+
+        .card {
+            margin-top: 30px;
         }
         
     }
