@@ -11,6 +11,7 @@ let compteurDeCoup = document.querySelector('.count');
 let nombreDeLettre = document.querySelector('.lettre')
 nombreDeLettre.textContent = motDecompose.length
 let verifierMot = [];
+let lettreDejaUtilise = document.querySelector('.lettreJoue');
 
 
 
@@ -35,10 +36,12 @@ function creerClavierVirtuel () {
     for (let i = 0 ; i < touche.length ; i++){
      clavier.innerHTML += '<div class="touche">'+ touche[i] +"</div>";
 }
+    
 
 clavier.addEventListener ('click', (event) => {
     toucheSelectionne = event.target.textContent;
     verifierSiLettreOresenteDansMot();
+    
     }
 )}
 
@@ -54,6 +57,7 @@ function verifierSiLettreOresenteDansMot () {
             afficherLettre(toucheSelectionne, i);
             estPresent = true;
             motDecompose.length - toucheSelectionne;
+            
         }
 
         if(motDecompose.length === verifierMot.length){
@@ -66,6 +70,7 @@ function verifierSiLettreOresenteDansMot () {
     nombreDeCoupRestant - 1;
     compteurDeCoup.textContent = nombreDeCoupRestant;
     imageDuPendu.innerHTML = `<img src="./images/p${nombreDeCoupRestant}.png" alt=""/>`
+    lettreDejaUtilise.textContent += toucheSelectionne;
 }
     if(nombreDeCoupRestant === 0){
                 document.body.style.backgroundColor = "red";
