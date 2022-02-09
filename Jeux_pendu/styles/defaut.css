@@ -20,7 +20,7 @@
     .clavier {
         display: flex;
         justify-content: center;
-        width: 50%;
+        width: 70%;
         padding: 30px;
         flex-wrap: wrap;
         border: 1px solid black;
@@ -67,7 +67,7 @@
 
 
   .lettreBox {
-        width: 400px;
+        width: 80%;
         display: flex;
         justify-content: center;
         align-items: center;
