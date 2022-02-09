@@ -65,7 +65,7 @@ function verifierSiLettreOresenteDansMot () {
     afficherPartiePotence();
     nombreDeCoupRestant - 1;
     compteurDeCoup.textContent = nombreDeCoupRestant;
-    imageDuPendu.innerHTML = `<img src="../images/p${nombreDeCoupRestant}.png" alt=""/>`
+    imageDuPendu.innerHTML = `<img src="./images/p${nombreDeCoupRestant}.png" alt=""/>`
 }
     if(nombreDeCoupRestant === 0){
                 document.body.style.backgroundColor = "red";
