@@ -1,0 +1,5 @@
+.hiddenLetter {
+    display: flex;
+    letter-spacing: 13px;
+    font-size: 3rem;
+}
