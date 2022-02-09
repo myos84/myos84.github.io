@@ -1,0 +1,116 @@
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    section {
+        display: flex;
+        justify-content: space-around;
+        background-color: darkcyan;
+        width: 100vw;
+        height: 100vh;
+    }
+
+    h1 {
+        font-size: 5em;
+        text-align: center;
+    }
+
+
+    .clavier {
+        display: flex;
+        justify-content: center;
+        width: 50%;
+        padding: 30px;
+        flex-wrap: wrap;
+        border: 1px solid black;
+        margin-top: 10px;
+        border-radius: 15px;
+    }
+
+
+    .touche {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid black;
+        margin: 5px;
+        border-radius: 5px;
+        cursor: pointer;
+        height: 40px;
+        width: 40px;
+        text-align: center;
+    }
+
+    .motSelectionne {
+        justify-content: center;
+        display: flex;
+    }
+
+
+    .lettreCache {
+        opacity:0;
+        padding: 5px;
+        transition: opacity .3s ease-in-out;
+        display: flex;
+        justify-content: center;
+        width: 25px;
+        border: 1px solid black;
+        border-radius: 5px;
+        content: "_";
+        margin : 5px;
+    }
+
+    .lettreCache.visible {
+        opacity:1;
+    }
+
+
+  .lettreBox {
+        width: 400px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 70px;
+        border : 1px solid black;
+        border-radius: 15px;
+    }
+
+  .imagePendu {
+        border-radius: 20px;
+        display: flex;
+        margin-bottom: 15px;
+        justify-content: center;
+        height: 300px;
+        background-color: white;
+        width: 50%;
+        height: 50%;
+    }
+
+
+    .ecranDeJeu {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 50%;
+    }
+
+    .left {
+        height: 100%;
+        width: 40%;
+    }
+
+    .right {
+        display: flex;
+        align-items: center;
+        justify-content:flex-start;
+        width: 40%;
+    }
+
+    .infoGame {
+        width: 50%;
+        height: 80%;
+        border: 1px solid black;
+        
+    }
